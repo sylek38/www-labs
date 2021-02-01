@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie #6</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <h1><a href="index.html">Logo</a></h1>
+            </div>
+            <nav class="main-nav">
+                <ul class="list">
+                    <li class="list-item" onclick="showSublist('sublist-1')"><a href="#">Podstrona 1</a>
+
+                        <ul id="sublist-1" class="sublist">
+                            <li class="list-item" onclick="showContent('s1')"><a href="#">Section 1 Photo</a></li>
+                            <li class="list-item" onclick="showContent('s2')"><a href="#">Section 2 Table</a></li>
+                            <li class="list-item" onclick="showContent('s3')"><a href="#">Section 3</a></li>
+                            <li class="list-item list-item-hide" onclick="hideSublist('sublist-1')"><a href="">Hide ↑</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="list-item" onclick="showSublist('sublist-2')"><a href="#">Podstrona 2</a>
+
+                        <ul id="sublist-2" class="sublist">
+                            <li class="list-item" onclick="showContent('s4')"><a href="#">Section 4</a></li>
+                            <li class="list-item" onclick="showContent('s5')"><a href="#">Section 5</a></li>
+                            <li class="list-item" onclick="showContent('s6')"><a href="#">Section 6</a></li>
+                            <li class="list-item list-item-hide" onclick="hideSublist('sublist-2')"><a href="">Hide ↑</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="list-item" onclick="showSublist('sublist-3')"><a href="#">Podstrona 3</a>
+
+                        <ul id="sublist-3" class="sublist">
+                            <li class="list-item" onclick="showContent('s7')"><a href="#">Section 7</a></li>
+                            <li class="list-item" onclick="showContent('s8')"><a href="#">Section 8</a></li>
+                            <li class="list-item" onclick="showContent('s9')"><a href="#">Section 9</a></li>
+                            <li class="list-item list-item-hide" onclick="hideSublist('sublist-3')"><a href="">Hide ↑</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+
+            <div id="content">
+                <section class="section" id="s0">
+                    <h2>Home</h2>
+                </section>
+                <section class="section" id="s1">
+                    <h2>Section 1</h2>
+                    <p>Random Unsplash Photo</p>
+                    <div class="box">
+
+                        <span id="status-bar-photo" onclick="togglePhoto('photo')">Hide</span>
+                        <img id="photo" src="https://source.unsplash.com/random/600x800" alt="random unsplash photo">
+                        <span class="hide" id="alt-text-photo">Photo</span>
+
+                    </div>
+                </section>
+                <section class="section" id="s2">
+                    <h2>Section 2</h2>
+                    <p>Table</p>
+                    <div class="box">
+
+                        <span id="status-bar-table" onclick="toggleTable('table')">Hide</span>
+                        <table id="table">
+                            <th colspan="2">Title</th>
+                            <tr>
+                                <td>Item1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Item2</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Item3</td>
+                                <td>3</td>
+                            </tr>
+                        </table>
+                        <span class="hide" id="alt-text-table">Table</span>
+
+                    </div>
+                </section>
+                <section class="section" id="s3">
+                    <h2>Section 3</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A sunt, molestiae animi adipisci iste
+                        veniam nam sint laboriosam similique neque nihil unde illum, tenetur recusandae delectus!
+                        Doloremque laudantium laborum atque?
+                        Architecto fuga ea numquam ipsam. Adipisci perspiciatis esse assumenda eius tempora ipsum labore
+                        aliquam. Voluptas culpa ad enim? Fugiat inventore commodi distinctio adipisci placeat iure
+                        impedit, quis reiciendis nemo voluptates!
+                        Delectus soluta itaque architecto, iste odio officia, quisquam illum fuga tempora placeat
+                        repellat. Tempore sed soluta consectetur mollitia sint voluptate dolorem provident enim
+                        voluptatem sapiente ducimus cum ratione, ab assumenda.
+                        Perferendis laudantium nemo in fuga ex omnis dolore dicta minus reprehenderit, fugiat enim iusto
+                        doloremque! Corrupti, quod. Numquam cupiditate sequi deserunt, et sint at harum, officiis
+                        tempore, obcaecati ullam praesentium!
+                        Laudantium non voluptatum sunt mollitia fugit assumenda explicabo aut sint. </p>
+                    <p>Aliquid eligendi repellat perferendis provident officia. Earum numquam cum officiis qui.
+                        Excepturi quibusdam esse voluptatem ullam exercitationem illum quos reiciendis?
+                        Ullam amet odio possimus consequatur consectetur officia placeat error corporis ipsum tempora
+                    </p>
+                    <p>Voluptatum veritatis porro nulla ducimus, in sed! Ducimus omnis non amet voluptates vitae
+                        accusantium corporis labore blanditiis impedit!
+                        Modi impedit veniam qui corrupti nulla minus voluptatum maxime expedita ab harum sunt doloremque
+                        voluptate quidem, atque nemo facere, soluta dolores cumque porro placeat adipisci perferendis
+                        quod necessitatibus! Odio, atque?
+                        Nemo ipsam necessitatibus voluptatibus dignissimos officia fugit eaque quam vitae iste iure.</p>
+                    <p>Doloribus optio a blanditiis cumque tempora ipsa nostrum molestiae error dolorum, amet obcaecati
+                        quos architecto praesentium possimus similique?
+                        Minus quis numquam libero mollitia ipsa distinctio cumque, non, dolorum ipsam, eveniet officiis
+                        rerum beatae neque minima consequuntur illum vel dignissimos. Quis eveniet exercitationem
+                        voluptatem, enim consequuntur cumque modi iure.
+                        Iure illo fugit, autem hic, nihil fugiat ex natus officiis reiciendis quibusdam earum error,
+                        dolore nam ab eos ducimus. Eaque nobis rem ex dolorem cumque perspiciatis quidem sint expedita
+                        quasi.
+                        Incidunt animi odit nam quaerat est? Quo temporibus veritatis consequuntur maiores am dicta
+                        aliquam vero, aperiam suscipit facere, neque ut autem!
+                        <p>Doloribus, quam magnam excepturi delectus hic repellendus?</p>
+                        Minima, hic odio, accusantium tempora ad iste facilis possimus consectetur in nemo molestiae
+                        quidem autem deleniti laborum quisquam dignissimos! Autem culpa architecto excepturi vitae illo
+                        atque reprehenderit perspiciatis! Corporis, cupiditate.
+                        Quas alias ducimus culpa molestiae ipsam sed praesentium optio voluptatum reiciendis, nihil
+                        voluptas, eum, quia ipsum autem ullam qui vel modi. Hic nisi quo distinctio quae officia
+                        accusamus temporibus adipisci.
+                        Harum minus possimus qui iusto optio iure architecto. Suscipit nobis veritatis voluptate modi
+                        adipisci pariatur, ullam dolore veniam aliquid voluptas distinctio maxime consequatur vitae
+                        optio tenetur molestias cum eligendi deserunt!
+                        Consequatur fugiat eos ratione porro, possimus id ipsum blanditiis quibusdam eveniet ipsa
+                        deleniti beatae quisquam, autem, tempore mollitia! Blanditiis nemo illo earum nisi! Excepturi,
+                        voluptate quo quibusdam officia ab nam!</p>
+                </section>
+
+                <section class="section" id="s4">
+                    <h2>Section 4</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda veritatis, dolore labore quos
+                        reprehenderit beatae
+                        dolorum ipsa eaque numquam earum mollitia rem enim eius, veniam est, nisi aperiam voluptas
+                        quod?Iste cupiditate adipisci suscipit nihil nesciunt dignissimos unde vel,
+                        esse deleniti consectetur porro provident explicabo autem, labore facere illum sequi minima.
+                        Error temporibus minus sed? Iusto nulla dolor id ea.
+                    </p>
+                </section>
+                <section class="section" id="s5">
+                    <h2>Section 5</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda veritatis, dolore labore quos
+                        reprehenderit beatae
+                        dolorum ipsa eaque numquam earum mollitia rem enim eius, veniam est, nisi aperiam voluptas
+                        quod?Iste cupiditate adipisci suscipit nihil nesciunt dignissimos unde vel,
+                        esse deleniti consectetur porro provident explicabo autem, labore facere illum sequi minima.
+                        Error temporibus minus sed? Iusto nulla dolor id ea.
+                    </p>
+                </section>
+                <section class="section" id="s6">
+                    <h2>Section 6</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda veritatis, dolore labore quos
+                        reprehenderit beatae
+                        dolorum ipsa eaque numquam earum mollitia rem enim eius, veniam est, nisi aperiam voluptas
+                        quod?Iste cupiditate adipisci suscipit nihil nesciunt dignissimos unde vel,
+                        esse deleniti consectetur porro provident explicabo autem, labore facere illum sequi minima.
+                        Error temporibus minus sed? Iusto nulla dolor id ea.
+                    </p>
+                </section>
+                <section class="section" id="s7">
+                    <h2>Section 7</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda veritatis, dolore labore quos
+                        reprehenderit beatae
+                        dolorum ipsa eaque numquam earum mollitia rem enim eius, veniam est, nisi aperiam voluptas
+                        quod?Iste cupiditate adipisci suscipit nihil nesciunt dignissimos unde vel,
+                        esse deleniti consectetur porro provident explicabo autem, labore facere illum sequi minima.
+                        Error temporibus minus sed? Iusto nulla dolor id ea.
+                    </p>
+                </section>
+                <section class="section" id="s8">
+                    <h2>Section 8</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda veritatis, dolore labore quos
+                        reprehenderit beatae
+                        dolorum ipsa eaque numquam earum mollitia rem enim eius, veniam est, nisi aperiam voluptas
+                        quod?Iste cupiditate adipisci suscipit nihil nesciunt dignissimos unde vel,
+                        esse deleniti consectetur porro provident explicabo autem, labore facere illum sequi minima.
+                        Error temporibus minus sed? Iusto nulla dolor id ea.
+                    </p>
+                </section>
+                <section class="section" id="s9">
+                    <h2>Section 9</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda veritatis, dolore labore quos
+                        reprehenderit beatae
+                        dolorum ipsa eaque numquam earum mollitia rem enim eius, veniam est, nisi aperiam voluptas
+                        quod?Iste cupiditate adipisci suscipit nihil nesciunt dignissimos unde vel,
+                        esse deleniti consectetur porro provident explicabo autem, labore facere illum sequi minima.
+                        Error temporibus minus sed? Iusto nulla dolor id ea.
+                    </p>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

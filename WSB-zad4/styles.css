@@ -1,0 +1,100 @@
+
+:root {
+    --white: rgb(255, 255, 255);
+    --light-gray: rgb(240, 240, 240); 
+    --gray: rgb(197, 197, 197); 
+    --dark-gray: rgb(136, 136, 136);
+    --tbl-hover: rgba(156, 57, 153, 0.5);
+    --selection-clr: rgb(156, 57, 153);
+    
+}
+
+/* --- #1 --- */
+q:before,
+q q q:before { content: '„' }
+
+q:after,
+q q q:after { content: '”' }
+
+q q:before,
+q q q q:before{ content: '»' }
+
+q q:after,
+q q q q:after{ content: '«' }
+
+
+/* --- #2 --- */
+p {
+    text-indent: 20px;
+}
+
+/* --- #3 --- */
+p:hover,
+q:hover,
+li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* --- #4 --- */
+::selection {
+    background-color: var(--selection-clr);
+    color: white;
+}
+
+/* --- #5 --- */
+
+/* szare*/
+tr:nth-child(odd),
+tr:nth-child(odd) > td:nth-child(odd) {
+    background-color: var(--gray);
+}
+
+tr:nth-child(odd):hover,
+tr:nth-child(odd):hover td:nth-child(odd) {
+    background-color: rgba(156, 57, 153, 0.6);
+}
+
+
+/* ciemnoszare*/
+tr:nth-child(even),
+tr:nth-child(even) > td:nth-child(odd) {
+    background-color: var(--dark-gray);
+}
+
+tr:nth-child(even):hover,
+tr:nth-child(even):hover td:nth-child(odd) {
+    background-color: rgba(156, 57, 153, 0.8);
+}
+
+
+ /* białe */
+tr:nth-child(odd) > td:nth-child(even) {
+    background-color: var(--white);
+}
+
+tr:nth-child(odd):hover td:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* jasnoszare */
+tr:nth-child(even) > td:nth-child(even) {
+    background-color: var(--light-gray);
+}
+
+tr:nth-child(even):hover td:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* białe dla <th> */
+th:nth-child(even) {
+    background-color: var(--white);
+}
+
+tr:nth-child(odd):hover th:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+

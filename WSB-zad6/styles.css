@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(1em + 0.5vw);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.header {
+    position: fixed;
+    max-width: 20vw;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    background-color:#333;
+    border-right: 3px solid white;
+}
+
+.main {
+    max-width: 80vw;
+    width: 100%;
+    margin-left: 20vw;
+    padding: 1em 1em 1em 2.5em;
+    background-color: rgb(99, 99, 99);
+}
+
+.logo {
+    text-align: center;
+    padding-bottom: 1.5em;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid white;
+}
+
+.main-nav {
+    text-align: center;
+}
+
+.main-nav ul {
+    list-style-type: none;
+}
+
+li {
+    /* outline: 2px solid white */
+}
+
+.list > .list-item{
+    position: relative;
+    transition: .25s;
+    border-bottom: 2px solid white;
+    font-weight: 600;
+    background-color: lightsalmon;
+}
+
+.list > .list-item:hover {
+    background-color: rgb(255, 185, 158);
+}
+
+.sublist > .list-item {
+    transition: .25s;
+    font-weight: 400;
+    background-color:lightsalmon;  
+}
+
+.sublist > .list-item:hover {
+    background-color: rgb(255, 185, 158);
+}
+
+.sublist > .list-item-hide {
+    transition: .25s;
+    background-color: white;
+    color: lightsalmon;
+}
+
+.sublist > .list-item-hide a {
+    transition: .25s;
+    color: lightsalmon;
+}
+
+.sublist > .list-item-hide a:hover {
+    color: white;
+}
+
+.main-nav .sublist {
+    display: none;
+}
+
+.main-nav a {
+    padding: .25em 0;
+    display: block;
+}
+
+.main-nav .block {
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+.section {
+    display: none;
+}
+
+#s0 {
+    display: initial;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    text-align: center;
+    background-color: lightsalmon;
+}
+
+.box span {
+    padding: .5em 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.hide {
+    display: none;
+}
+
+table {
+    text-align: center;
+    background-color:rgb(255, 185, 158);
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 2px solid lightsalmon;
+    padding: .5em;
+}
